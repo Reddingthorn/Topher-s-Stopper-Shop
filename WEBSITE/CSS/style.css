@@ -1,0 +1,219 @@
+Body {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    background: #833AB4;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    font-family: "Press Start 2P", Consolas, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.top {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 0;
+    color: black;
+    background: #833AB4;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+}
+
+img {
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.shop-title {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    border: 4px solid #000;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    letter-spacing: 3px;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.product {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.buy-btn {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.buy-btn:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .shop-title {
+        font-size: 18px;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+
+    .product {
+        display: block; /* stack products vertically */
+        margin: 20px auto;
+    }
+
+    img {
+        width: 90%; /* responsive image */
+        height: auto;
+        max-width: 320px; /* prevents oversized images */
+        margin: 15px auto;
+        display: block;
+    }
+
+    .buy-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX (duplicate)
+   ========================= */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .shop-title {
+        font-size: 18px;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+
+    .product {
+        display: block; /* stack products vertically */
+        margin: 20px auto;
+    }
+
+    img {
+        width: 90%; /* responsive image */
+        height: auto;
+        max-width: 320px; /* prevents oversized images */
+        margin: 15px auto;
+        display: block;
+    }
+
+    .buy-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+h2, h3 {
+    margin: 10px 5px;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .product-page img {
+        width: 100%;
+    }
+}
+box-shadow 0.3s ease; } .product:hover { transform: translateY(-10px); 
+    box-shadow: 0 25px 45px 
+    rgba(0,0,0,0.45); } 
+@media (
+max-width: 768px) 
+{ h1 { font-size: 18px; } 
+.product-page img 
+{ width: 100%; } }
